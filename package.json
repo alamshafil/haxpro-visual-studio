@@ -1,0 +1,25 @@
+{
+    "name": "haxpro-visual-studio",
+    "displayName": "HaxPro for Visual Studio",
+    "description": "Visual Studio Code extension for HaxPro scripting language.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "haxpro",
+            "aliases": ["HaxPro", "haxpro"],
+            "extensions": [".hax"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "haxpro",
+            "scopeName": "source.hax",
+            "path": "./syntaxes/haxpro.tmLanguage.json"
+        }]
+    }
+}
